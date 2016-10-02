@@ -53,3 +53,18 @@ git push -u origin master
 '''
 
 # 설명파일 수정
+
+# 첫번째 기능테스트 코드 만들기
+---
+from selenium import webdriver
+
+browser = webdriver.Firefox()
+browser = get('http://localhost:8000')
+
+assert 'Django' in browser.title
+---
+파이어폭스창을 실행하기 위해 셀레늄을 구동하고
+브라우저를 통해 웹페이지를 연다.
+title 에 Django 라는 단어가 있는지 확인한다.
+
+
