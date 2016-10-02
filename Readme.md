@@ -54,7 +54,7 @@ git push -u origin master
 
 # 설명파일 수정
 
-# 첫번째 기능테스트 코드 만들기
+# 첫번째 기능테스트 코드 만들기(project 폴더)
 ---
 from selenium import webdriver
 
@@ -97,7 +97,7 @@ browser.get('http://localhost:8000')
 
 assert 'Django' in browser.title
 
-#다시실행
+#다시실행(project 폴더)
 python functional_test.py
 
 #Firefox 드라이버는 실행안되는듯해서 chrome 드라이버로 변경 코드수정
@@ -115,3 +115,26 @@ Traceback (most recent call last):
   File "functional_test.py", line 7, in <module>
     assert 'Django' in browser.title
 AssertionError
+
+#장고실행로 프로잭트생성(project 폴더에서 실행)
+django-admin.py startproject superlists
+
+# 트리구조확인.
+├── chromedriver
+├── chromedriver_mac64.zip
+├── functional_test.py
+└── superlists
+    ├── manage.py
+    └── superlists
+        ├── __init__.py
+        ├── settings.py
+        ├── urls.py
+        └── wsgi.py
+
+# 장고실행
+장고실행은 manage.py 를 통해서 이루어진다. 대부분 장고의 명령어들은 manage.py 를 통해 이루어짐.
+
+python manage.py runserver
+
+# 기능테스트 다시실행
+정상실행 됨 당연한결과
