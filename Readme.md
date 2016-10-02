@@ -11,30 +11,44 @@ python3 -m venv superlist-python
 source ./superlist-python/bin/activate
 
 # django 설치
+'''
 pip install django
+'''
 
-
-make git .gitignore
-
+#.gitignore 파일만들기
+'''
 superlist-python/
 db.sqlite3
 .pyc
+__pycache__
+.DS_Store
+'''
 
 #selenium 설치
 
 #requirements.txt 파일설치
 
+'''
 pip freeze > requirements.txt
+'''
 
 ## 나중에 복구할때는 아래롸같이 하면 동일한 환경유지
 
+'''
 pip install -r requirements.txt
-
+'''
 
 #git addd & commit
+
+'''
 git add .
 git commit -m '첫번째커밋
+'''
 
 #git hub 연결
+'''
 git remote add origin git@github.com:<your-github-username>/python-superlists.git
-$ git push -u origin master
+git push -u origin master
+'''
+
+# 설명파일 수정
