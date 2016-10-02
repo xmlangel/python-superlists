@@ -120,6 +120,7 @@ AssertionError
 django-admin.py startproject superlists
 
 # 트리구조확인.
+"'
 ├── chromedriver
 ├── chromedriver_mac64.zip
 ├── functional_test.py
@@ -130,7 +131,7 @@ django-admin.py startproject superlists
         ├── settings.py
         ├── urls.py
         └── wsgi.py
-
+"'
 # 장고실행
 장고실행은 manage.py 를 통해서 이루어진다. 대부분 장고의 명령어들은 manage.py 를 통해 이루어짐.
 
