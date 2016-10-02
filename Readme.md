@@ -1,5 +1,8 @@
 리눅스와 맥OS
 
+# git 초기화
+git init
+
 #venv 환경에서 작업
 리눅스와 맥에서 virtualenv를 생성하려면 간단하게 python3 -m venv [이름]를 실행하면 됩니다.
 
@@ -27,3 +30,11 @@ pip freeze > requirements.txt
 
 pip install -r requirements.txt
 
+
+#git addd & commit
+git add .
+git commit -m '첫번째커밋
+
+#git hub 연결
+git remote add origin git@github.com:<your-github-username>/python-superlists.git
+$ git push -u origin master
