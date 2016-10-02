@@ -11,9 +11,10 @@ python3 -m venv superlist-python
 source ./superlist-python/bin/activate
 
 # django 설치
-'''
+
+\'
 pip install django
-'''
+\'
 
 #.gitignore 파일만들기
 '''
