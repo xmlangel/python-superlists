@@ -8,15 +8,17 @@ git init
 #venv 환경에서 작업
 리눅스와 맥에서 virtualenv를 생성하려면 간단하게 python3 -m venv [이름]를 실행하면 됩니다.
 
+```
 python3 -m venv superlist-python
 
 source ./superlist-python/bin/activate
+```
 
 # django 설치
 
-\'
+```
 pip install django
-\'
+```
 
 #.gitignore 파일만들기
 '''
@@ -28,6 +30,10 @@ __pycache__
 '''
 
 #selenium 설치
+
+```
+pip install selenium
+```
 
 #requirements.txt 파일설치
 
